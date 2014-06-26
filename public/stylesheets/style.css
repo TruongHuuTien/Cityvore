@@ -5772,6 +5772,21 @@ button.close {
     display: none !important;
   }
 }
+.text-pink {
+  color: #cc0c39;
+}
+.text-orange {
+  color: #e6781e;
+}
+.text-green {
+  color: #c8cf02;
+}
+.text-yellow {
+  color: #f8fcc1;
+}
+.text-blue {
+  color: #1693a7;
+}
 body {
   color: #aaaaaa;
   font: 12px;
@@ -5780,7 +5795,7 @@ body {
 #page-header {
   background-color: #ffffff;
   color: #aaaaaa;
-  box-shadow: 2px 0px 4px #cccccc;
+  box-shadow: 2px 0px 4px #cc0c39;
 }
 #page-header .container {
   margin-left: 0px;
