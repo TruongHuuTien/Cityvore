@@ -3,6 +3,7 @@
 <head>
 	<title><%= title %></title>
 	<link rel='stylesheet' href='/stylesheets/style.css' />
+	<meta name="viewport" content="width=device-width,user-scalable=no">
 </head>
 <body>
 	<%- include block/header.ejs %>
@@ -10,14 +11,36 @@
 		<div id="index-banner-img"></div>
 		<div id="index-banner-mask"></div>
 		<div id="index-banner-content" class="container">
-			<h2>Le site des gros mangeur de villes</h2>
-			<button class="button white">S'inscrire</button>
+			<h2>Le site des gros mangeurs de ville</h2>
+			<button class="button white medium">S'inscrire</button>
 		</div>
 	</div>
 	<div id="page-content" class="container-fluid">
+		<div class="row visible-xs" id="index-mobile-box">
+			<div class="col-xs-12">
+				<a href="login"><button id="header-connection-button" class="button blue-plain fullwidth large" type="button">Connexion</button></a>
+			</div>
+		</div>
 		<div class="row">
-			<div class="col-lg-10">
-				
+			<div class="col-md-4 col-lg-3">
+				<div id="index-news" class="panel green">
+					<div class="panel-heading">
+						<h3 class="panel-title">Actualité</h3>
+					</div>
+					<div class="panel-body">
+						<p>26 Juin. Début du codage</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-8 col-lg-9">
+				<div id="index-one" class="panel orange">
+					<div class="panel-heading">
+						<h3 class="panel-title">A la une</h3>
+					</div>
+					<div class="panel-body">
+						<p></p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

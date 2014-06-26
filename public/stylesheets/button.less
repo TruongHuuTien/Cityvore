@@ -16,6 +16,16 @@
 			background-color: @blue;
 		}
 	}
+	&.blue-plain {
+		border-color: @blue;
+		background-color: @blue;
+		color: @white;
+		&:hover {
+			color: @white;
+			border-color: @blue;
+			background-color: @blue;
+		}
+	}
 	&.white {
 		border-color: @white;
 		color: @white;
@@ -28,5 +38,16 @@
 	&:hover {
 		color: @darkGrey;
 		border-color: @darkGrey;
+	}
+	&.fullwidth {
+		width: 100%;
+	}
+	&.large {
+		padding-top: 0.8em;
+		padding-bottom: 0.8em;
+	}
+	&.medium {
+		padding-top: 0.4em;
+		padding-bottom: 0.4em;
 	}
 }

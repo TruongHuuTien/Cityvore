@@ -6,4 +6,8 @@ router.get('/', function(req, res) {
   res.render('index', { title: "Cityvore"});
 });
 
+router.get('/login', function(req, res) {
+	res.render('login', { title: "Cityvore"});
+});
+
 module.exports = router;
