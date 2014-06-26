@@ -5794,6 +5794,8 @@ button.close {
   border-radius: 1px;
   font-size: 1em;
   letter-spacing: 1px;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 .button.blue {
   border-color: #1693a7;
@@ -5803,6 +5805,15 @@ button.close {
   color: #ffffff;
   border-color: #1693a7;
   background-color: #1693a7;
+}
+.button.white {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.button.white:hover {
+  color: #aaaaaa;
+  border-color: #ffffff;
+  background-color: #ffffff;
 }
 .button:hover {
   color: #666666;
@@ -5866,4 +5877,51 @@ h1 {
   letter-spacing: 8px;
   border-bottom: 4px solid #aaaaaa;
   padding: 8px 4px;
+}
+h2 {
+  font-weight: lighter;
+  font-size: 2em;
+  letter-spacing: 4px;
+  padding: 8px 4px;
+}
+#index-banner {
+  margin-top: 40px;
+  height: 400px;
+  padding: 0px;
+  position: relative;
+}
+#index-banner #index-banner-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url('../images/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: grayscale(1) blur(1px);
+  -webkit-filter: grayscale(1) blur(1px);
+  -moz-filter: grayscale(1) blur(1px);
+  -o-filter: grayscale(1) blur(1px);
+  -ms-filter: grayscale(1) blur(1px);
+}
+#index-banner #index-banner-mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #cc0c39;
+  opacity: 0.4;
+}
+#index-banner #index-banner-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  color: #ffffff;
+  padding: 100px 20px;
+}
+#index-banner #index-banner-content h2 {
+  margin-bottom: 40px;
+}
+#index-banner #index-banner-content button {
+  font-size: 1.6em;
 }
