@@ -1,0 +1,21 @@
+.button {
+	border: 1px solid @lightGrey;
+	color: @mediumGrey;
+	background-color: transparent;
+	border-radius: 1px;
+	font-size: 1em;
+	letter-spacing: 1px;
+	&.blue {
+		border-color: @blue;
+		color: @blue;
+		&:hover {
+			color: @white;
+			border-color: @blue;
+			background-color: @blue;
+		}
+	}
+	&:hover {
+		color: @darkGrey;
+		border-color: @darkGrey;
+	}
+}

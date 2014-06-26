@@ -5787,10 +5787,26 @@ button.close {
 .text-blue {
   color: #1693a7;
 }
-body {
+.button {
+  border: 1px solid #cccccc;
   color: #aaaaaa;
-  font: 12px;
-  font-family: "Helvetica Neue UltraLight", "Helvetica Neue Light", "Helvetica Neue", "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: transparent;
+  border-radius: 1px;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+.button.blue {
+  border-color: #1693a7;
+  color: #1693a7;
+}
+.button.blue:hover {
+  color: #ffffff;
+  border-color: #1693a7;
+  background-color: #1693a7;
+}
+.button:hover {
+  color: #666666;
+  border-color: #666666;
 }
 #page-header {
   background-color: #ffffff;
@@ -5835,6 +5851,11 @@ body {
   right: 20px;
   width: 100px;
 }
+body {
+  color: #aaaaaa;
+  font: 12px;
+  font-family: "Helvetica Neue UltraLight", "Helvetica Neue Light", "Helvetica Neue", "Lucida Grande", Helvetica, Arial, sans-serif;
+}
 #page-content {
   margin-top: 80px;
 }
@@ -5845,16 +5866,4 @@ h1 {
   letter-spacing: 8px;
   border-bottom: 4px solid #aaaaaa;
   padding: 8px 4px;
-}
-.button {
-  border: 1px solid #cccccc;
-  color: #aaaaaa;
-  background-color: transparent;
-  border-radius: 1px;
-  font-size: 1em;
-  letter-spacing: 1px;
-}
-.button:hover {
-  color: #666666;
-  border-color: #666666;
 }
