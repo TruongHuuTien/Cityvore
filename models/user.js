@@ -27,4 +27,14 @@ User.add = function(data, callback) {
 	});
 }
 
+User.login = function(email, password, callback) {
+	mysql.query("SELECT id, email FROM user WHERE email='"+email+"' AND password='"+password+"'", function(err, rows){
+		if (!err && rows.length !== 0) {
+			if (callback) {
+				callback(rows[0]);
+			}
+		}
+	});
+}
+
 module.exports = User;

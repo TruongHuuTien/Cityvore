@@ -24,4 +24,13 @@ router.post('/', function(req, res) {
 	}
 });
 
+router.post('/login', function(req, res){
+	console.log('login', req.body);
+	if (req.body && req.body.email && req.body.password) {
+		user.login(req.body.email, req.body.password, function(u){
+			res.send(200, u);
+		});
+	}
+});
+
 module.exports = router;
