@@ -10,4 +10,8 @@ router.get('/login', function(req, res) {
 	res.render('login', { title: "Cityvore"});
 });
 
+router.get('/register', function(req, res) {
+	res.render('register', { title: "Cityvore"});
+});
+
 module.exports = router;

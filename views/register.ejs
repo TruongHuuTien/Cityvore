@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= title %></title>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<%- include block/js-vendor.ejs %>
+	<script>
+	$(document).ready(function(){
+	});
+	</script>
+</head>
+<body>
+	<%- include block/header.ejs %>
+	<div id="page-content" class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+				<div class="panel blue">
+					<div class="panel-heading">
+						<h3 class="panel-title">Formulaire d'inscription</h3>
+					</div>
+					<div class="panel-body">
+						<form class="form-horizontal" role="form">
+							<h4>Identifiant de connexion</h4>
+							<div class="form-group">
+								<label for="register-email" class="col-sm-4 control-label">Adresse email :</label>
+								<div class="col-sm-8">
+									<input type="email" class="form-control" id="register-email" placeholder="Adresse email">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="register-password1" class="col-sm-4 control-label">Mot de passe :</label>
+								<div class="col-sm-8">
+									<input type="password" class="form-control" id="register-password1" placeholder="Mot de passe">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="register-password2" class="col-sm-4 control-label">Confirmation :</label>
+								<div class="col-sm-8">
+									<input type="password" class="form-control" id="register-password2" placeholder="Confirmation mot de passe">
+								</div>
+							</div>
+							<br />
+							<h4>Information complémentaire</h4>
+							<div class="form-group">
+								<label for="register-firstname" class="col-sm-4 control-label">Prénom :</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="register-firstname" placeholder="Prénom">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="register-lastname" class="col-sm-4 control-label">Nom :</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="register-lastname" placeholder="Nom">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="register-phone" class="col-sm-4 control-label">Téléphone :</label>
+								<div class="col-sm-8">
+									<input type="tel" class="form-control" id="register-phone" placeholder="Téléphone">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="register-city" class="col-sm-4 control-label">Ville :</label>
+								<div class="col-sm-8">
+									<select class="form-control" id="register-city">
+										<option>Montréal</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="register-phone" class="col-sm-4 control-label">Code d'entreprise :</label>
+								<div class="col-sm-8">
+									<input type="tel" class="form-control" id="register-phone" placeholder="Code d'entreprise">
+								</div>
+							</div>
+							<button type="submit" class="button right blue">Valider</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
