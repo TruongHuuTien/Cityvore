@@ -15,34 +15,50 @@
 			<a href="register"><button class="button white medium">S'inscrire</button></a>
 		</div>
 	</div>
-	<div id="page-content" class="container-fluid">
+	<div id="page-content" class="container">
 		<div class="row visible-xs" id="index-mobile-box">
 			<div class="col-xs-12">
 				<a href="login"><button id="header-connection-button" class="button blue-plain fullwidth large" type="button">Connexion</button></a>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-4 col-lg-3">
-				<div id="index-news" class="panel green">
-					<div class="panel-heading">
-						<h3 class="panel-title">Actualité</h3>
+			<div class="col-xs-12">
+				<h2 class="title-underline orange">Actualité</h2>
+				<div class="container-fluid">
+					<div class="row article">
+						<div class="col-xs-3 text-center">
+							3 Juillet 2014
+						</div>
+						<div class="col-xs-9">
+							Page d'accueil.<br />
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</div>
 					</div>
-					<div class="panel-body">
-						<p>26 Juin. Début du codage</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-8 col-lg-9">
-				<div id="index-one" class="panel orange">
-					<div class="panel-heading">
-						<h3 class="panel-title">A la une</h3>
-					</div>
-					<div class="panel-body">
-						<p></p>
+					<div class="row">
+						<div class="col-xs-3 text-center">
+							12 Juin 2014
+						</div>
+						<div class="col-xs-9">
+							Début du codage.<br />
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<div class="separator bg-green text-center">
+		<div class="container">
+			<h4 class="text-white">Suivez-nous</h4>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12" style="height: 800px;">
+				<h2 class="title-underline brand">Aujourd'hui</h2>
+			</div>
+		</div>
+	</div>
+	<%- include block/footer.ejs %>
 </body>
 </html>
